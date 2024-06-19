@@ -10,10 +10,9 @@ type LinkProps = {
 export default function Link(props: LinkProps) {
     const [copied, setCopied] = useState(false);
 
-    // Function to handle copy action
     const handleCopy = () => {
         setCopied(true);
-        setTimeout(() => setCopied(false), 2000); // Reset copy status after 2 seconds
+        setTimeout(() => setCopied(false), 2000);
     };
 
     return (
